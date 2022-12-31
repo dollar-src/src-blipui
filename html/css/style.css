@@ -1,0 +1,492 @@
+
+
+@font-face {
+    font-family: 'akrobatbold';
+    src: url('akrobat-bold-webfont.woff2') format('woff2'),
+         url('akrobat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'akrobatextralight';
+    src: url('akrobat-extralight-webfont.woff2') format('woff2'),
+         url('akrobat-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body{
+
+    overflow:hidden;
+}
+
+.Container {
+    display: none;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    
+    background: linear-gradient(360deg, rgba(2, 28, 163, 0.81) -20.93%, rgba(0, 0, 0, 0.6561) 42.57%);
+    mix-blend-mode: multiply;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.Container2 {
+    display: none;
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1920px;
+height: 1080px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(103.55deg, rgba(255, 20, 48, 0.937085) -9.97%, #1A5CD5 60.52%, #D10E31 100.63%, #1952CC 103.22%, #051A36 107.51%);
+opacity: 0.9;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.bliptextheader {
+    position: absolute;
+    width: 408px;
+    height: 72px;
+    right: 30px;
+    top: -50px;
+    
+    font-family: 'akrobatbold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90%;
+    
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+
+}
+
+
+
+.bliptextalt {
+    
+
+
+    position: absolute;
+    width: 530px;
+    height: 72px;
+    right: 30px;
+    top: 50px;
+    font-family: 'akrobatextralight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 90%;
+   text-align: right;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+
+
+.blip1icon , .blip2icon , .blip3icon, .blip4icon, .blip5icon , .blip5icon , .blip6icon, .blip7icon , .blip8icon, .blip9icon ,.blip10icon ,.blip11icon ,.blip12icon{
+    display: flex;
+    font-size: 24px;
+    color: white;
+    left: 35px;
+    top:28px;
+    position: absolute;
+
+}
+
+.blip1text {
+
+
+position: absolute;
+width: 279px;
+height: 24px;
+left: 100px;
+bottom: 5px;
+font-family: 'akrobatbold';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+
+.blipcheckbox1 {
+    left: 270px;
+    
+    top: 15px;
+    
+}
+
+.sidebartext {
+
+    position: absolute;
+    width: 1080px;
+    height: 108px;
+    left: -500px;
+    bottom:470px;
+    font-family: 'akrobatextralight';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 110px;
+
+    
+    text-transform: uppercase;
+    
+    color: rgba(255, 255, 255, 0.25);
+    
+    transform: rotate(-90deg);
+
+}
+
+.bar1 {
+position: absolute;
+width: 9px;
+height: 535px;
+top: 230px;
+left: 670px;
+background: #3A7196;
+box-shadow: 0px 4px 10px 7px rgba(58, 113, 150, 0.46);
+}
+
+
+.bar2 {
+    position: absolute;
+    width: 9px;
+    height: 535px;
+    top: 230px;
+    left: 1200px;
+    background: #3A7196;
+    box-shadow: 0px 4px 10px 7px rgba(58, 113, 150, 0.46);
+    }
+
+    .bar3 {
+        position: absolute;
+        width: 9px;
+        height: 535px;
+        top: 230px;
+        left: 150px;
+        background: #3A7196;
+        box-shadow: 0px 4px 10px 7px rgba(58, 113, 150, 0.46);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background: #64c1d8;
+
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+  .blipcontainer1 {
+   
+    box-shadow: 0px 10px 20px #3175C1;
+    
+   
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    top: 200px;
+    left: 200px;
+    position: absolute;
+    width: 338px;
+    height: 58px;
+    background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+    border-radius: 300px;
+    
+    }
+    
+    .blipcontainer2 {
+      
+        
+        box-shadow: 0px 10px 20px #3175C1;
+      
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+        top: 100px;
+        left: 0;
+        position: absolute;
+        width: 338px;
+        height: 58px;
+        background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+        border-radius: 300px;
+        
+        }
+
+        .blipcontainer3 {
+            box-shadow: 0px 10px 20px #3175C1;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            top: 100px;
+            left: 0;
+            position: absolute;
+            width: 338px;
+            height: 58px;
+            background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+            border-radius: 300px;
+            
+            }
+            .blipcontainer4 {
+                box-shadow: 0px 10px 20px #3175C1;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 10px;
+                gap: 10px;
+                top: 100px;
+                left: 0;
+                position: absolute;
+                width: 338px;
+                height: 58px;
+                background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                border-radius: 300px;
+                
+                }
+                .blipcontainer5 {
+                    box-shadow: 0px 10px 20px #3175C1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 10px;
+                    gap: 10px;
+                    top: 100px;
+                    left: 0;
+                    position: absolute;
+                    width: 338px;
+                    height: 58px;
+                    background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                    border-radius: 300px;
+                    
+                    }
+                    .blipcontainer6 {
+                        box-shadow: 0px 10px 20px #3175C1;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 10px;
+                        gap: 10px;
+                        top: 100px;
+                        left: 0;
+                        position: absolute;
+                        width: 338px;
+                        height: 58px;
+                        background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                        border-radius: 300px;
+                        
+                        }
+
+
+                        
+                        .blipcontainer7 {
+                            box-shadow: 0px 10px 20px #3175C1;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            padding: 10px;
+                            gap: 10px;
+                            top: -500px;
+                            left: 600px;
+                            position: absolute;
+                            width: 338px;
+                            height: 58px;
+                            background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                            border-radius: 300px;
+                            
+                            }
+
+                            .blipcontainer8 {
+                                box-shadow: 0px 10px 20px #3175C1;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: flex-start;
+                                padding: 10px;
+                                gap: 10px;
+                                top: 100px;
+                                left: 0px;
+                                position: absolute;
+                                width: 338px;
+                                height: 58px;
+                                background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                                border-radius: 300px;
+                                
+                                }
+
+                                .blipcontainer9 {
+                                    box-shadow: 0px 10px 20px #3175C1;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: flex-start;
+                                    padding: 10px;
+                                    gap: 10px;
+                                    top: 100px;
+                                    left: 0px;
+                                    position: absolute;
+                                    width: 338px;
+                                    height: 58px;
+                                    background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                                    border-radius: 300px;
+                                    
+                                    }
+
+                                    .blipcontainer10{
+                                        box-shadow: 0px 10px 20px #3175C1;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: flex-start;
+                                        padding: 10px;
+                                        gap: 10px;
+                                        top: 100px;
+                                        left: 0px;
+                                        position: absolute;
+                                        width: 338px;
+                                        height: 58px;
+                                        background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                                        border-radius: 300px;
+                                        
+                                        }
+
+                                        .blipcontainer11 {
+                                            box-shadow: 0px 10px 20px #3175C1;
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: flex-start;
+                                            padding: 10px;
+                                            gap: 10px;
+                                            top: 100px;
+                                            left: 0px;
+                                            position: absolute;
+                                            width: 338px;
+                                            height: 58px;
+                                            background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                                            border-radius: 300px;
+                                            
+                                            }
+
+                                            .blipcontainer12 {
+                                                box-shadow: 0px 10px 20px #3175C1;
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: flex-start;
+                                                padding: 10px;
+                                                gap: 10px;
+                                                top: 100px;
+                                                left: 0px;
+                                                position: absolute;
+                                                width: 338px;
+                                                height: 58px;
+                                                background: linear-gradient(131.17deg, #005792 0%, rgba(1, 0, 0, 0.51) 100%);
+                                                border-radius: 300px;
+                                                
+                                                }
+
+                                                
