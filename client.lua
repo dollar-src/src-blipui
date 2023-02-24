@@ -28,7 +28,7 @@ if Config.Core == "standalone" then
 end
 
 
-RegisterCommand(Config.Command,function ()
+RegisterNetEvent('blipmenuac',function ()
   blipui()
 end)
 
@@ -230,9 +230,9 @@ RegisterNUICallback("blipstate:1", function()
     createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip1[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip1[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip1[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip1[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -244,12 +244,12 @@ RegisterNUICallback("blipstate:2", function()
   if Config.Bliptatus.blip2 then
 
   for k, v in pairs(Config.Blip2) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip2(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip2[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip2[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip2[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip2[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -261,12 +261,12 @@ RegisterNUICallback("blipstate:3", function()
   if Config.Bliptatus.blip3 then
 
   for k, v in pairs(Config.Blip3) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip3(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip3[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip3[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip3[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip3[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -277,12 +277,12 @@ end)
 RegisterNUICallback("blipstate:4", function()
   if Config.Bliptatus.blip4 then
   for k, v in pairs(Config.Blip4) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip4(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip4[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip4[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip4[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip4[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -294,12 +294,12 @@ RegisterNUICallback("blipstate:5", function()
     if Config.Bliptatus.blip5 then
 
   for k, v in pairs(Config.Blip5) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip5(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip5[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip5[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip5[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip5[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -311,12 +311,12 @@ RegisterNUICallback("blipstate:6", function()
   if Config.Bliptatus.blip6 then
 
   for k, v in pairs(Config.Blip6) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip6(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip6[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip6[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip6[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip6[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -328,12 +328,12 @@ RegisterNUICallback("blipstate:7", function()
   if Config.Bliptatus.blip7 then
 
   for k, v in pairs(Config.Blip7) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip7(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip7[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip7[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip7[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip7[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -344,12 +344,12 @@ end)
 RegisterNUICallback("blipstate:8", function()
   if Config.Bliptatus.blip8 then
   for k, v in pairs(Config.Blip8) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip8(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip8[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip8[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip8[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip8[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -361,12 +361,12 @@ RegisterNUICallback("blipstate:9", function()
   if Config.Bliptatus.blip9 then
 
   for k, v in pairs(Config.Blip9) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip9(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip9[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip9[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip9[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip9[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -377,12 +377,12 @@ end)
 RegisterNUICallback("blipstate:10", function()
   if Config.Bliptatus.blip10 then
   for k, v in pairs(Config.Blip10) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip10(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip10[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip10[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip10[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip10[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -393,12 +393,12 @@ end)
 RegisterNUICallback("blipstate:11", function()
   if Config.Bliptatus.blip11 then
   for k, v in pairs(Config.Blip11) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip11(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip11[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip11[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip11[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip11[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -411,13 +411,13 @@ RegisterNUICallback("blipstate:12", function()
     
 
   for k, v in pairs(Config.Blip12) do
-    createblip1(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
+    createblip12(v.x,v.y, v.sprite, v.colour, v.scale, v.info)
   end
 
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip12[1].info.." ".." Enabled", "success")
+    Core.Functions.Notify(Config.Blip12[1].info.." ".." Aktif Edildi", "success")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip12[1].info.." ".." Enabled")
+    Core.ShowHelpNotification(Config.Blip12[1].info.." ".." Aktif Edildi")
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   
@@ -437,9 +437,9 @@ RegisterNUICallback("blipstate:1:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip1[1].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip1[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip1[1].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip1[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -455,9 +455,9 @@ RegisterNUICallback("blipstate:2:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip2[1].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip2[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip2[1].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip2[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -473,9 +473,9 @@ RegisterNUICallback("blipstate:3:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip3[1].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip3[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip3[1].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip3[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -490,9 +490,9 @@ RegisterNUICallback("blipstate:4:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip4[1].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip4[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip4[1].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip4[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -507,9 +507,9 @@ RegisterNUICallback("blipstate:5:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip5[1].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip5[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip5[1].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip5[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -524,9 +524,9 @@ RegisterNUICallback("blipstate:6:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip6[1].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip6[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip6[1].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip6[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -541,9 +541,9 @@ RegisterNUICallback("blipstate:7:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip1[7].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip7[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip1[7].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip7[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -558,9 +558,9 @@ RegisterNUICallback("blipstate:8:close", function(data)
 
   end
   if Config.Core == 'qbcore' then
-    Core.Functions.Notify(Config.Blip8[1].info.." ".." Disabled", "Error")
+    Core.Functions.Notify(Config.Blip8[1].info.." ".." Kapatıldı", "Error")
   elseif Config.Core == 'esx' then
-    Core.ShowHelpNotification(Config.Blip8[1].info.." ".." Disabled") 
+    Core.ShowHelpNotification(Config.Blip8[1].info.." ".." Kapatıldı") 
   else
   --  // UR CUSTOM EXPORT ' FOR STANDALONE'
   end
@@ -575,9 +575,9 @@ for k, v in pairs(bliptable9) do
 
 end
 if Config.Core == 'qbcore' then
-  Core.Functions.Notify(Config.Blip9[1].info.." ".." Disabled", "Error")
+  Core.Functions.Notify(Config.Blip9[1].info.." ".." Kapatıldı", "Error")
 elseif Config.Core == 'esx' then
-  Core.ShowHelpNotification(Config.Blip9[1].info.." ".." Disabled") 
+  Core.ShowHelpNotification(Config.Blip9[1].info.." ".." Kapatıldı") 
 else
 --  // UR CUSTOM EXPORT ' FOR STANDALONE'
 end
@@ -592,9 +592,9 @@ for k, v in pairs(bliptable10) do
 
 end
 if Config.Core == 'qbcore' then
-  Core.Functions.Notify(Config.Blip10[1].info.." ".." Disabled", "Error")
+  Core.Functions.Notify(Config.Blip10[1].info.." ".." Kapatıldı", "Error")
 elseif Config.Core == 'esx' then
-  Core.ShowHelpNotification(Config.Blip10[1].info.." ".." Disabled") 
+  Core.ShowHelpNotification(Config.Blip10[1].info.." ".." Kapatıldı") 
 else
 --  // UR CUSTOM EXPORT ' FOR STANDALONE'
 end
@@ -609,9 +609,9 @@ for k, v in pairs(bliptable11) do
 
 end
 if Config.Core == 'qbcore' then
-  Core.Functions.Notify(Config.Blip11[1].info.." ".." Disabled", "Error")
+  Core.Functions.Notify(Config.Blip11[1].info.." ".." Kapatıldı", "Error")
 elseif Config.Core == 'esx' then
-  Core.ShowHelpNotification(Config.Blip11[1].info.." ".." Disabled") 
+  Core.ShowHelpNotification(Config.Blip11[1].info.." ".." Kapatıldı") 
 else
 --  // UR CUSTOM EXPORT ' FOR STANDALONE'
 end
@@ -626,9 +626,9 @@ for k, v in pairs(bliptable1) do
 
 end
 if Config.Core == 'qbcore' then
-  Core.Functions.Notify(Config.Blip12[1].info.." ".." Disabled", "Error")
+  Core.Functions.Notify(Config.Blip12[1].info.." ".." Kapatıldı", "Error")
 elseif Config.Core == 'esx' then
-  Core.ShowHelpNotification(Config.Blip12[1].info.." ".." Disabled") 
+  Core.ShowHelpNotification(Config.Blip12[1].info.." ".." Kapatıldı") 
 else
 --  // UR CUSTOM EXPORT ' FOR STANDALONE'
 end
